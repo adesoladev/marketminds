@@ -34,7 +34,7 @@ h4 {
 
 .menu-btn {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 30px;
   z-index: 2;
@@ -490,7 +490,7 @@ h1 {
 
 .footer-container {
   display: flex;
-  gap: 60px;
+  gap: 40px;
 }
 
 .footer-container span {
@@ -558,7 +558,47 @@ h1 {
 }
 
 /* Setting Responsiveness */
+@media only screen and (max-width: 1280px) {
+  .hero-content h2 {
+    width: 50%;
+  }
+
+  .hero-content p {
+    width: 70%;
+  }
+
+  .about-us-stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-img img {
+    height: auto;
+    width: 535px;
+  }
+
+  .about-us-stats-content {
+    margin-top: 40px;
+  }
+
+  .about-us-stats-content p {
+    width: 55%;
+  }
+}
+
 @media only screen and (max-width: 1115px) {
+  .hero-content h2 {
+    width: 60%;
+  }
+
+  .hero-content p {
+    width: 80%;
+  }
+
   .core-value-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -611,15 +651,15 @@ h1 {
   .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8rem;
+    /* grid-gap: 8rem; */
   }
 
   .footer-logo {
-    width: 150%;
+    width: 100%;
   }
 
   .footer-newsletter {
-    width: 150%;
+    width: 100%;
   }
 }
 
@@ -660,15 +700,42 @@ h1 {
   .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 8rem;
+    /* grid-gap: 8rem; */
   }
 
   .footer-logo {
-    width: 150%;
+    width: 100%;
   }
 
   .footer-newsletter {
-    width: 150%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .hero-content h2 {
+    width: 75%;
+  }
+
+  .hero-content p {
+    width: 90%;
+  }
+
+  .services-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-card {
+    padding: 20px 20px;
+    width: 380px;
+  }
+
+  .testimonials-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-card {
+    width: 380px;
   }
 }
 
@@ -714,19 +781,28 @@ h1 {
   .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10rem;
+    /* grid-gap: 10rem; */
   }
 
   .footer-logo {
-    width: 170%;
+    width: 100%;
   }
 
   .footer-newsletter {
-    width: 160%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 834px) {
+  .main-nav {
+    padding: 30px 20px;
+  }
+
+  .main-menu {
+    display: flex;
+    gap: 10px;
+  }
+
   .hero-content h2 {
     width: 85%;
   }
@@ -751,11 +827,21 @@ h1 {
 
   .footer-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 8rem; */
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .main-nav {
+    padding: 30px 20px;
+  }
+
+  .main-menu {
+    display: flex;
+    gap: 10px;
+  }
+
   .hero-content h2 {
     width: 95%;
   }
@@ -793,6 +879,28 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+  .main-nav {
+    padding: 30px 20px;
+  }
+
+  .main-menu {
+    display: flex;
+    gap: 10px;
+  }
+
+  .hero-content h2 {
+    width: 95%;
+  }
+
+  .hero-content p {
+    width: 100%;
+  }
+
+  .hero-img img {
+    height: auto;
+    width: 330px;
+  }
+
   .core-value-card {
     height: 195px;
     width: 330px;
@@ -818,7 +926,7 @@ h1 {
     top: 0;
     left: 0;
     background-color: #f0e489;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     transform: translateX(-500px);
     transition: transform 0.5s ease-in-out;
@@ -944,6 +1052,11 @@ h1 {
     margin-top: 40px;
   }
 
+  .hero-img img {
+    height: auto;
+    width: 370px;
+  }
+
   .about-us-img {
     display: flex;
     justify-content: left;
@@ -1005,6 +1118,11 @@ h1 {
 }
 
 @media only screen and (max-width: 414px) {
+  .hero-img img {
+    height: auto;
+    width: 355px;
+  }
+
   .stats-card {
     grid-template-columns: 1fr;
     width: 355px;
@@ -1084,7 +1202,7 @@ h1 {
 
 @media only screen and (max-width: 390px) {
   .hero-content h2 {
-    width: 85%;
+    width: 80%;
   }
 
   .hero-content p {
@@ -1105,8 +1223,17 @@ h1 {
     width: 100%;
   }
 
+  .services-card {
+    padding: 20px 20px;
+    width: 330px;
+  }
+
   .core-value-card {
     height: 195px;
+    width: 330px;
+  }
+
+  .testimonials-card {
     width: 330px;
   }
 
@@ -1120,6 +1247,14 @@ h1 {
 }
 
 @media only screen and (max-width: 375px) {
+  .hero-content h2 {
+    width: 87%;
+  }
+
+  .hero-content p {
+    width: 100%;
+  }
+
   .about-us-stats-content h2 {
     width: 85%;
   }
@@ -1184,6 +1319,22 @@ h1 {
 }
 
 @media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  .right-menu button {
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin-right: 42px;
+  }
+
+  .main-nav i {
+    background-color: #aefc3f;
+    padding: 5px 5px;
+    color: white;
+  }
+
   .hero-content h2 {
     width: 95%;
   }
