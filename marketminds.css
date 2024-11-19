@@ -574,13 +574,71 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 884px) {
+@media only screen and (max-width: 980px) {
   .hero-content h2 {
-    width: 80%;
+    width: 70%;
   }
 
   .hero-content p {
+    width: 95%;
+  }
+
+  .about-us-stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-stats-content {
+    margin-top: 40px;
+  }
+
+  .services-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-details {
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+  }
+
+  .footer-logo {
+    width: 150%;
+  }
+
+  .footer-newsletter {
+    width: 150%;
+  }
+}
+
+@media only screen and (max-width: 884px) {
+  .main-menu {
+    display: flex;
+    gap: 15px;
+  }
+
+  .right-menu button {
+    margin: 0;
+  }
+
+  .hero-content h2 {
     width: 85%;
+  }
+
+  .hero-content p {
+    width: 90%;
   }
 
   .about-us-stats-container {
@@ -607,14 +665,15 @@ h1 {
   .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
   }
 
   .footer-logo {
-    width: 100%;
+    width: 170%;
   }
 
   .footer-newsletter {
-    width: 100%;
+    width: 160%;
   }
 }
 
