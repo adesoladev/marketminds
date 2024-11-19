@@ -574,6 +574,55 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-content h2 {
+    width: 65%;
+  }
+
+  .hero-content p {
+    width: 95%;
+  }
+
+  .about-us-stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-us-stats-content {
+    margin-top: 40px;
+  }
+
+  .services-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-details {
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8rem;
+  }
+
+  .footer-logo {
+    width: 150%;
+  }
+
+  .footer-newsletter {
+    width: 150%;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   .hero-content h2 {
     width: 70%;
